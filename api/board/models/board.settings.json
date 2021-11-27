@@ -2,7 +2,8 @@
   "kind": "collectionType",
   "collectionName": "boards",
   "info": {
-    "name": "Board"
+    "name": "Board",
+    "description": ""
   },
   "options": {
     "increments": true,
@@ -19,6 +20,14 @@
     "Slug": {
       "type": "uid",
       "targetField": "name"
+    },
+    "user": {
+      "plugin": "users-permissions",
+      "model": "user"
+    },
+    "lists": {
+      "via": "board",
+      "collection": "list"
     }
   }
 }
