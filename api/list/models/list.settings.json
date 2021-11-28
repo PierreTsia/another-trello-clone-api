@@ -26,8 +26,12 @@
       "model": "board"
     },
     "cards": {
-      "collection": "card",
-      "via": "list"
+      "via": "list",
+      "collection": "card"
+    },
+    "archived": {
+      "type": "boolean",
+      "default": false
     }
   }
 }

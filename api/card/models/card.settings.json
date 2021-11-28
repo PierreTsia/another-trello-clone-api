@@ -2,7 +2,8 @@
   "kind": "collectionType",
   "collectionName": "cards",
   "info": {
-    "name": "Card"
+    "name": "Card",
+    "description": ""
   },
   "options": {
     "increments": true,
@@ -20,6 +21,14 @@
     "list": {
       "via": "cards",
       "model": "list"
+    },
+    "archived": {
+      "type": "boolean",
+      "default": false
+    },
+    "index": {
+      "type": "biginteger",
+      "default": "10000000"
     }
   }
 }
